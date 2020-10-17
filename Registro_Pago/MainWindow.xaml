@@ -1,0 +1,29 @@
+﻿<Window x:Class="Registro_Pago.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro_Pago"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Menu Height="25" FontSize="16">
+            <MenuItem Header="Registros">
+                <MenuItem x:Name="rPersonasMenuItem" Header="Registro de Personas" Click="rPersonasButton_Click"></MenuItem>
+                <MenuItem x:Name="rPrestamoMenuItem" Header="Registro de Prestamo" Click="rPrestamoButton_Click"></MenuItem>
+                <MenuItem x:Name="rMorasMenuItem" Header="Registro Moras"       Click="rMorasButton_Click"></MenuItem>
+
+            </MenuItem>
+            <MenuItem Header="Consultas">
+                <MenuItem x:Name="cPersonasMenuItem" Header="Consulta de Personas" Click="cPersonasButton_Click"/>
+                <MenuItem x:Name="cPrestamoMenuItem" Header="Consulta de Prestamo" Click="cPrestamoButton_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Ayuda">
+                <Menu/>
+            </MenuItem>
+
+        </Menu>
+    </StackPanel>
+    
+</Window>
